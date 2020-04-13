@@ -29,6 +29,7 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
+  <link rel="apple-touch-icon" href="/img/Logo.png"/>
 
   <link rel="shortcut icon" type="image/png" href="/img/Logo.png"/>
   <link rel="shortcut icon" href="/img/Logo.png"/>
@@ -89,6 +90,13 @@ iframe {
   <!-- Your custom scripts (optional) -->
   <script type="text/javascript"></script>
   <script>
+    $(document).ready(function() {
+        $("body").delegate("a", "click", function(e) {
+             e.preventDefault();
+             window.parent.location.href = this.href;
+             return false;
+        });
+    });
     if (
         (("standalone" in window.navigator) && !window.navigator.standalone)
         ||

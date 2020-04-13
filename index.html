@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>QuaranTime</title>
   <!-- MDB icon -->
@@ -22,13 +27,29 @@
   <link rel="manifest" href="/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="128x128" href="/img/Logo.png">
-  <link rel="icon" sizes="192x192"  href="/img/Logo.png">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="theme-color" content="#FFFFFF">
-  <meta name="apple-mobile-web-app-status-bar-style" content="white">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <link rel="shortcut icon" type="image/png" href="/img/Logo.png"/>
+  <link rel="shortcut icon" href="/img/Logo.png"/>
+  <!-- icon in the highest resolution we need it for -->
+  <link rel="icon" sizes="192x192" href="/img/Logo.png')"/>
+  <!-- reuse same icon for Safari -->
+  <link rel="apple-touch-icon" href="/img/Logo.png">
+  <!---Icon iphone-->
+  <link rel="apple-touch-startup-image" href="/img/Logo.png">
+  <!-- multiple icons for IE -->
+  <meta name="msapplication-square310x310logo" content="/img/Logo.png">
+  <script src="prevent.js" type="text/javascript"></script>
+
+
+  <meta name="mobile-web-app-capable" content ="yes">
+  <meta name="apple-mobile-web-app-capable" content ="yes">
+  <meta name="apple-mobile-web-app-capable" content ="yes">
+  <meta name="mobile-web-app-capable" content ="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content ="black">
+  <meta name="apple-mobile-web-app-title" content ="QuaranTime">
+
   <link rel="apple-touch-startup-image" href="img/Logo.png">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
@@ -40,8 +61,9 @@
   <link rel="stylesheet" href="css/mdb.min.css">
   <!-- Your custom styles (optional) -->
   <link rel="stylesheet" href="css/style.css">
+
   <link rel="stylesheet" type="text/css" href="/src/addtohomescreen.css">
-  <script src="/src/addtohomescreen.js"></script>
+  <script type="text/javascript" src="/src/addtohomescreen.js"></script>
   <script>
     if (
         (("standalone" in window.navigator) && !window.navigator.standalone)

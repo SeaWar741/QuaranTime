@@ -1,0 +1,30 @@
+{
+    "short_name": "QuaranTime",
+    "name": "QuaranTime",
+    "theme_color": "#29292A",
+    "background_color": "#F7F8F9",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "img/Loco.png",
+        "type": "image/png",
+        "sizes": "48x48"
+      },
+      {
+        "src": "img/Loco.png",
+        "type": "image/png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "img/Loco.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      },
+      {
+        "src": "img/Loco.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ],
+    "start_url": "/?utm_source=launcher"
+  }

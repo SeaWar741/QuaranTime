@@ -78,6 +78,21 @@
             return true;
         })
     });
+    $(function () {
+    $('a.removeBlank').on('click', function () {
+
+        if ($(this).attr('target') == "_blank") {
+            $(this).attr('target', '_self');
+        }
+
+        $(this).click();
+
+        return false;
+    })
+    });
+    window.open = function (url, name, features, replace) {
+      document.getElementById('#iframe').src = url;
+    }
   </script>
 </head>
 
